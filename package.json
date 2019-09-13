@@ -1,0 +1,20 @@
+{
+  "name": "markdown-it-spoiler",
+  "version": "1.0.0",
+  "description": "!!spoiler!! plugin for markdown-it markdown parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traPtitech/markdown-it-spoiler.git"
+  },
+  "keywords": [
+    "markdown-it",
+    "markdown-it-plugin",
+    "markdown"
+  ],
+  "author": "sapphi-red <green@sapphi.red> (https://github.com/sapphi-red)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traPtitech/markdown-it-spoiler/issues"
+  },
+  "homepage": "https://github.com/traPtitech/markdown-it-spoiler#readme"
+}
