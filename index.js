@@ -26,7 +26,7 @@
 'use strict'
 const exMark = 0x21 /* ! */
 
-const tokenize = (state, silent) => {
+const tokenize = frontPriorMode => (state, silent) => {
   if (silent) return false
 
   const start = state.pos
@@ -40,9 +40,13 @@ const tokenize = (state, silent) => {
 
   if (len < 2) return false
 
+  let isOdd = false
   if (len % 2) {
-    const token = state.push("text", "", 0)
-    token.content = ch
+    isOdd = true
+    if (!frontPriorMode) {
+      const token = state.push("text", "", 0)
+      token.content = ch
+    }
     len--
   }
 
@@ -62,6 +66,9 @@ const tokenize = (state, silent) => {
   }
 
   state.pos += scanned.length
+  if (isOdd && frontPriorMode) {
+    state.pos--
+  }
 
   return true
 }
@@ -125,8 +132,8 @@ const postProcess = (state, delimiters) => {
   }
 }
 
-module.exports = function(md) {
-  md.inline.ruler.before("emphasis", "spoiler", tokenize)
+module.exports = function(md, frontPriorMode = false) {
+  md.inline.ruler.before("emphasis", "spoiler", tokenize(frontPriorMode))
   md.inline.ruler2.before("emphasis", "spoiler", state => {
     postProcess(state, state.delimiters)
 
