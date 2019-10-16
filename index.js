@@ -87,26 +87,26 @@ const postProcess = (state, delimiters) => {
     tokenO.tag = "span"
     tokenO.attrs = [["class", "spoiler"]]
     tokenO.nesting = 1
-    tokenO.markup = "||"
+    tokenO.markup = "!!"
     tokenO.content = ""
 
     const tokenC = state.tokens[endDelim.token]
     tokenC.type = "spoiler_close"
     tokenC.tag = "span"
     tokenC.nesting = -1
-    tokenC.markup = "||"
+    tokenC.markup = "!!"
     tokenC.content = ""
 
     if (
       state.tokens[endDelim.token - 1].type === "text" &&
-      state.tokens[endDelim.token - 1].content === "|"
+      state.tokens[endDelim.token - 1].content === "!"
     ) {
       loneMarkers.push(endDelim.token - 1)
     }
   }
 
   // If a marker sequence has an odd number of characters, it's splitted
-  // like this: `|||||` -> `|` + `||` + `||`, leaving one marker at the
+  // like this: `!!!!!` -> `!` + `!!` + `!!`, leaving one marker at the
   // start of the sequence.
   //
   // So, we have to move all those markers after subsequent spoiler_close tags.
