@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-spoiler",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "!!spoiler!! plugin for markdown-it markdown parser",
   "main": "index.js",
   "types": "index.d.ts",
