@@ -2,6 +2,8 @@
   "name": "markdown-it-spoiler",
   "version": "1.1.0",
   "description": "!!spoiler!! plugin for markdown-it markdown parser",
+  "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/traPtitech/markdown-it-spoiler.git"
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/traPtitech/markdown-it-spoiler/issues"
   },
-  "homepage": "https://github.com/traPtitech/markdown-it-spoiler#readme"
+  "homepage": "https://github.com/traPtitech/markdown-it-spoiler#readme",
+  "dependencies": {
+    "@types/markdown-it": "*"
+  }
 }
