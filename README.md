@@ -3,6 +3,9 @@
 
 `!!spoiler!!` => `<span class="spoiler">spoiler</span>`
 
+## Installation
+`$ npm i @traptitech/markdown-it-spoiler`
+
 ## `frontPriorMode`(default: `false`)
 ### when `false`
 
