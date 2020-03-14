@@ -1,10 +1,10 @@
-name: automatic release
+name: check npm ci
 on:
   push:
     branches:
       - master
 jobs:
-  release:
+  check:
     name: check npm install
     runs-on: ubuntu-latest
     steps:
