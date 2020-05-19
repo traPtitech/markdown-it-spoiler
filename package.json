@@ -4,6 +4,9 @@
   "description": "!!spoiler!! plugin for markdown-it markdown parser",
   "main": "index.js",
   "types": "index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/traPtitech/markdown-it-spoiler.git"
@@ -21,5 +24,10 @@
   "homepage": "https://github.com/traPtitech/markdown-it-spoiler#readme",
   "dependencies": {
     "@types/markdown-it": "*"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "markdown-it": "^10.0.0",
+    "markdown-it-testgen": "^0.1.6"
   }
 }
