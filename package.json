@@ -22,10 +22,9 @@
     "url": "https://github.com/traPtitech/markdown-it-spoiler/issues"
   },
   "homepage": "https://github.com/traPtitech/markdown-it-spoiler#readme",
-  "dependencies": {
-    "@types/markdown-it": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/markdown-it": "*",
     "jest": "^26.0.1",
     "markdown-it": "^11.0.0",
     "markdown-it-testgen": "^0.1.6"
