@@ -133,3 +133,10 @@ Should parse delimiters inside links:
 .
 <p><a href=""><span class="spoiler">foo</span></a></p>
 .
+
+Regression test for markdown-it/markdown-it#742:
+.
+-!!!!;!!!!!!
+.
+<p>-<span class="spoiler"><span class="spoiler">;</span></span>!!</p>
+.
