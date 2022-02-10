@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "uvu"
   },
   "repository": {
     "type": "git",
@@ -22,11 +22,10 @@
     "url": "https://github.com/traPtitech/markdown-it-spoiler/issues"
   },
   "homepage": "https://github.com/traPtitech/markdown-it-spoiler#readme",
-  "dependencies": {},
   "devDependencies": {
     "@types/markdown-it": "*",
-    "jest": "^27.0.3",
     "markdown-it": "^12.0.0",
-    "markdown-it-testgen": "^0.1.6"
+    "markdown-it-testgen": "^0.1.6",
+    "uvu": "^0.5.3"
   }
 }
