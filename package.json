@@ -24,7 +24,7 @@
   "homepage": "https://github.com/traPtitech/markdown-it-spoiler#readme",
   "devDependencies": {
     "@types/markdown-it": "*",
-    "markdown-it": "^12.0.0",
+    "markdown-it": "^13.0.1",
     "markdown-it-testgen": "^0.1.6",
     "uvu": "^0.5.3"
   }
